@@ -1,0 +1,64 @@
+<h1 aling=center>T1a06 - spy - ethan <br> <br><br>
+
+
+
+
+Write your private ideas here<br>
+<textarea id="myArea1" rows=5 cols=70>This is good</textarea><br><br>
+
+<input type=button value=encrypt onclick="{
+   myStart = document.getElementById('myArea1').value.toUpperCase()
+   //alert(myStart)
+   myMax = document.getElementById('myArea1').value.length
+   document.getElementById('myArea2').value = ''
+   
+    for (myLoop = 0; myLoop <= myMax-1; myLoop++ ){
+      myTemp = ''
+      if (myStart[myLoop] == 'A'){myTemp = 'b'}
+      if (myStart[myLoop] == 'B'){myTemp = 'c'}
+       if (myStart[myLoop] == 'c'){myTemp = 'd'}
+      if (myStart[myLoop] == 'd'){myTemp = 'e'}
+      if (myStart[myLoop] == 'e'){myTemp = 'f'}
+      if (myStart[myLoop] == 'f'){myTemp = 'g'}
+      if (myStart[myLoop] == 'g'){myTemp = 'h'}
+      
+      if (myStart[myLoop] == 'h'){myTemp = 'i'}
+      if (myStart[myLoop] == 'i'){myTemp = 'j'}
+       if (myStart[myLoop] == 'j'){myTemp = 'k'}
+      if (myStart[myLoop] == 'k'){myTemp = 'l'}
+      if (myStart[myLoop] == 'l'){myTemp = 'm'}
+      if (myStart[myLoop] == 'm'){myTemp = 'n'}
+      if (myStart[myLoop] == 'n'){myTemp = 'o'}
+      
+      if (myStart[myLoop] == 'o'){myTemp = 'p'}
+      if (myStart[myLoop] == 'p'){myTemp = 'q'}
+       if (myStart[myLoop] == 'q'){myTemp = 'r'}
+      if (myStart[myLoop] == 'r'){myTemp = 's'}
+      if (myStart[myLoop] == 's'){myTemp = 't'}
+      if (myStart[myLoop] == 't'){myTemp = 'u'}
+      if (myStart[myLoop] == 'u'){myTemp = 'v'}
+      
+      if (myStart[myLoop] == 'v'){myTemp = 'w'}
+      if (myStart[myLoop] == 'w'){myTemp = 'x'}
+      
+      if (myStart[myLoop] == 'x'){myTemp = 'y'}
+      if (myStart[myLoop] == 'y'){myTemp = 'z'}
+       if (myStart[myLoop] == 'z'){myTemp = 'a'}
+      if (myStart[myLoop] == ' '){myTemp = ' '}
+      document.getElementById('myArea2').value += myTemp
+    }
+   
+}"><br>
+
+The encrypted version to email goes here<br>
+<textarea id="myArea2" rows=5 cols=70></textarea><br><br>
+
+The decryipted reply goes here.<br>
+<input type=button value=decrypt onclick="{
+   alert(document.getElementById('myArea2').value.length)
+   
+   
+}"><br>
+
+<textarea id="myArea3" rows=5 cols=70></textarea><br><br>
+

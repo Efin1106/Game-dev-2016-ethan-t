@@ -1,0 +1,199 @@
+
+
+<body onkeypress="{
+  document.getElementById('myOut1').innerHTML = 
+  String.fromCharCode(event.keyCode) + ' = ' + event.keyCode
+}">
+
+<h1 align=center> Events by Ethan</h1>
+This <b onClick="{
+  alert('hi')
+}"> is Bold </b> not this.<br><br><br><br>
+<input type=text value=Ethan id="myText1" onselect="{ 
+  document.getElementById('myOut1').innerHTML = 
+  document.all.myText1.value
+}">
+<div id="myOut1">  Output goes here</div>
+</body>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
+
+<p id="michel"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("michel").innerHTML = "Help I'm Trapped inside a Computer";
+}
+</script>
+</head>
+</body>
+</html>
+
+
+
+
+
+
+
+<br>
+ <input type="text" id="fname" onblur="myFunction()">
+<p></p>
+<script>
+function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"
+<input type=text value=Ethan id="myText2" alt="I Don't Know  " width="35" height="20">
+<script>
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+function normalImg(x) {
+    x.style.height = "20px";
+    x.style.width = "15px";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.droptarget {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+</style>
+</head>
+<body>
+<p>Drag the  element back and forth between the two rectangles:</p>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" 
+  id="dragtarget">MOVE ME!!</p>
+</div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p id="evan"></p>
+<script>
+function dragStart(event) {
+    event.dataTransfer.setData("Text", event.target.id);
+}
+function dragging(event) {
+    document.getElementById("evan").innerHTML = "The  element is being dragged";
+}
+function allowDrop(event) {
+    event.preventDefault();
+}
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+    document.getElementById("evan").innerHTML = "The p element was dropped";
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Select a new car from the list.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="">help
+  <option value="">me
+  <option value="">I 
+  <option value="">don't 
+  <option value="">Know  
+  <option value="">what  
+  <option value="">is
+  <option value="">happening
+  <option value="">somebody 
+  <option value="">help
+  
+</select>
+
+<p></p>
+
+<p id="tyggar"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("tyggar").innerHTML = "You selected: " + x;
+}
+</script>
+
+</body>
+</html>

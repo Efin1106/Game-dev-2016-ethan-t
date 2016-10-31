@@ -10,18 +10,15 @@ This <b onClick="{
   alert('hi')
 }"> is Bold </b> not this.<br><br><br><br>
 <input type=text value=Ethan id="myText1" onselect="{ 
-  document.getElementById('myOut1').innerHTML = 
+  document.getElementById('tommy').innerHTML = 
   document.all.myText1.value
 }">
-<div id="myOut1">  Output goes here</div>
+<div id="tommy">  Output goes here</div>
 </body>
 
 
 
-
-
-
-
+1.<br>
 
 
 <!DOCTYPE html>
@@ -43,25 +40,27 @@ function myFunction() {
 
 
 
+<br>2.<br><br>
 
+<!DOCTYPE html>
+<html>
+<body>
 
+Enter your name: <input type="text" onfocus="myFunction(this)">
 
+<p>When the input field gets focus, a function is triggered which changes the background-color.</p>
 
-<br>
- <input type="text" id="fname" onblur="myFunction()">
-<p></p>
 <script>
-function myFunction() {
-    var x = document.getElementById("fname");
-    x.value = x.value.toUpperCase();
+function myFunction(x) {
+    x.style.background = "pink";
 }
 </script>
+
 </body>
 </html>
 
 
-
-
+<br>3.<br>
 
 
 <!DOCTYPE html>
@@ -83,15 +82,7 @@ function normalImg(x) {
 </body>
 </html>
 
-
-
-
-
-
-
-
-
-
+<br>4.<br>
 
 
 
@@ -119,7 +110,7 @@ function normalImg(x) {
 <p id="evan"></p>
 <script>
 function dragStart(event) {
-    event.dataTransfer.setData("Text", event.target.id);
+    event.dataTransfer.setData("Tevan", event.target.id);
 }
 function dragging(event) {
     document.getElementById("evan").innerHTML = "The  element is being dragged";
@@ -129,38 +120,16 @@ function allowDrop(event) {
 }
 function drop(event) {
     event.preventDefault();
-    var data = event.dataTransfer.getData("Text");
+    var data = event.dataTransfer.getData("tevan");
     event.target.appendChild(document.getElementById(data));
-    document.getElementById("evan").innerHTML = "The p element was dropped";
+    document.getElementById("evan").innerHTML = "Did that do any thing to help ";
 }
 </script>
 </body>
 </html>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br><br><br><br><br>
+<br><br> <br> <br> <br> <br> <br>5.<br><br><br>
 
 
 
@@ -168,7 +137,7 @@ function drop(event) {
 <html>
 <body>
 
-<p>Select a new car from the list.</p>
+<p></p>
 
 <select id="mySelect" onchange="myFunction()">
   <option value="">help
@@ -180,7 +149,7 @@ function drop(event) {
   <option value="">is
   <option value="">happening
   <option value="">somebody 
-  <option value="">help
+  <option value="no ">help
   
 </select>
 
@@ -197,3 +166,113 @@ function myFunction() {
 
 </body>
 </html>
+<br><br>6.<br><br>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" oncopy="myFunction()" value="Try to copy this text">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Good job "
+}
+</script>
+
+</body>
+</html>
+
+<br><br>7.<br><br><br>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 onclick="showCoords(event)">Click this me and see where your mouse 
+is compaired to the beggining of this text  </h2>
+
+<p><strong>Tip:</strong> Try to click different places in the heading.</p>
+
+<p id="demo"></p>
+
+<script>
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coords = "X = : " + x + ", Y = : " + y;
+    document.getElementById("demo").innerHTML = coords;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<br><br>8.<br><br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <html>
+<body bgcolor="2999.999"></body>

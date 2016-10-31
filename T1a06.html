@@ -4,7 +4,7 @@
 
 
 Write your private ideas here<br>
-<textarea id="myArea1" rows=5 cols=70>This is good</textarea><br><br>
+<textarea id="myArea1" rows=5 cols=70>ABCDEFGHE1234</textarea><br><br>
 
 <input type=button value=encrypt onclick="{
    myStart = document.getElementById('myArea1').value.toUpperCase()
@@ -13,39 +13,48 @@ Write your private ideas here<br>
    document.getElementById('myArea2').value = ''
    
     for (myLoop = 0; myLoop <= myMax-1; myLoop++ ){
-      myTemp = ''
-      if (myStart[myLoop] == 'A'){myTemp = 'b'}
-      if (myStart[myLoop] == 'B'){myTemp = 'c'}
-       if (myStart[myLoop] == 'c'){myTemp = 'd'}
-      if (myStart[myLoop] == 'd'){myTemp = 'e'}
-      if (myStart[myLoop] == 'e'){myTemp = 'f'}
-      if (myStart[myLoop] == 'f'){myTemp = 'g'}
-      if (myStart[myLoop] == 'g'){myTemp = 'h'}
+      myEnd = ''
+      if (myStart[myLoop] == 'A'){myEnd = 'B'}
+      if (myStart[myLoop] == 'B'){myEnd = 'C'}
+      if (myStart[myLoop] == 'C'){myEnd = 'D'}
+      if (myStart[myLoop] == 'D'){myEnd = 'E'}
+      if (myStart[myLoop] == 'E'){myEnd = 'F'}
+      if (myStart[myLoop] == 'F'){myEnd = 'G'}
+      if (myStart[myLoop] == 'G'){myEnd = 'H'}
+      if (myStart[myLoop] == 'H'){myEnd = 'I'}
+      if (myStart[myLoop] == 'I'){myEnd = 'J'}
+      if (myStart[myLoop] == 'J'){myEnd = 'K'}
+      if (myStart[myLoop] == 'K'){myEnd = 'L'}
+      if (myStart[myLoop] == 'L'){myEnd = 'M'}
+      if (myStart[myLoop] == 'M'){myEnd = 'N'}
+      if (myStart[myLoop] == 'N'){myEnd = 'O'}
+      if (myStart[myLoop] == 'O'){myEnd = 'P'}
+      if (myStart[myLoop] == 'P'){myEnd = 'Q'}
+      if (myStart[myLoop] == 'Q'){myEnd = 'R'}
+      if (myStart[myLoop] == 'R'){myEnd = 'S'}
+      if (myStart[myLoop] == 'S'){myEnd = 'T'}
+      if (myStart[myLoop] == 'T'){myEnd = 'U'}
+      if (myStart[myLoop] == 'U'){myEnd = 'V'}
+      if (myStart[myLoop] == 'V'){myEnd = 'W'}
+      if (myStart[myLoop] == 'W'){myEnd = 'X'}
+      if (myStart[myLoop] == 'X'){myEnd = 'Y'}
+      if (myStart[myLoop] == 'Y'){myEnd = 'Z'}
+      if (myStart[myLoop] == 'Z'){myEnd = 'A'}
+      if (myStart[myLoop] == '1'){myEnd = '2'}
+      if (myStart[myLoop] == '2'){myEnd = '3'}
+      if (myStart[myLoop] == '3'){myEnd = '4'}
+      if (myStart[myLoop] == '4'){myEnd = '5'}
+      if (myStart[myLoop] == '5'){myEnd = '6'}
+      if (myStart[myLoop] == '6'){myEnd = '7'}
+      if (myStart[myLoop] == '7'){myEnd = '8'}
+      if (myStart[myLoop] == '8'){myEnd = '9'}
+      if (myStart[myLoop] == '9'){myEnd = '0'}
+      if (myStart[myLoop] == '0'){myEnd = '1'}
+      if (myStart[myLoop] == '-'){myEnd = ' '}
+      if (myStart[myLoop] == ' '){myEnd = '-'}
+      if (myStart[myLoop] == 'A'){myEnd = 'b'}
       
-      if (myStart[myLoop] == 'h'){myTemp = 'i'}
-      if (myStart[myLoop] == 'i'){myTemp = 'j'}
-       if (myStart[myLoop] == 'j'){myTemp = 'k'}
-      if (myStart[myLoop] == 'k'){myTemp = 'l'}
-      if (myStart[myLoop] == 'l'){myTemp = 'm'}
-      if (myStart[myLoop] == 'm'){myTemp = 'n'}
-      if (myStart[myLoop] == 'n'){myTemp = 'o'}
-      
-      if (myStart[myLoop] == 'o'){myTemp = 'p'}
-      if (myStart[myLoop] == 'p'){myTemp = 'q'}
-       if (myStart[myLoop] == 'q'){myTemp = 'r'}
-      if (myStart[myLoop] == 'r'){myTemp = 's'}
-      if (myStart[myLoop] == 's'){myTemp = 't'}
-      if (myStart[myLoop] == 't'){myTemp = 'u'}
-      if (myStart[myLoop] == 'u'){myTemp = 'v'}
-      
-      if (myStart[myLoop] == 'v'){myTemp = 'w'}
-      if (myStart[myLoop] == 'w'){myTemp = 'x'}
-      
-      if (myStart[myLoop] == 'x'){myTemp = 'y'}
-      if (myStart[myLoop] == 'y'){myTemp = 'z'}
-       if (myStart[myLoop] == 'z'){myTemp = 'a'}
-      if (myStart[myLoop] == ' '){myTemp = ' '}
-      document.getElementById('myArea2').value += myTemp
+      document.getElementById('myArea2').value += myEnd
     }
    
 }"><br>
@@ -55,10 +64,64 @@ The encrypted version to email goes here<br>
 
 The decryipted reply goes here.<br>
 <input type=button value=decrypt onclick="{
-   alert(document.getElementById('myArea2').value.length)
+   myStart = document.getElementById('myArea2').value.toUpperCase()
+   //alert(myStart)
+   myMax = document.getElementById('myArea2').value.length
+   document.getElementById('myArea3').value = ''
    
+    for (myLoop = 0; myLoop <= myMax-1; myLoop++ ){
+      myEnd = ''
+      if (myStart[myLoop] == 'B'){myEnd = 'A'}
+      if (myStart[myLoop] == 'C'){myEnd = 'B'}
+      if (myStart[myLoop] == 'D'){myEnd = 'C'}
+      if (myStart[myLoop] == 'E'){myEnd = 'D'}
+      if (myStart[myLoop] == 'F'){myEnd = 'E'}
+      if (myStart[myLoop] == 'G'){myEnd = 'F'}
+      if (myStart[myLoop] == 'H'){myEnd = 'G'}
+      if (myStart[myLoop] == 'I'){myEnd = 'H'}
+      if (myStart[myLoop] == 'J'){myEnd = 'I'}
+      if (myStart[myLoop] == 'K'){myEnd = 'J'}
+      if (myStart[myLoop] == 'L'){myEnd = 'K'}
+      if (myStart[myLoop] == 'M'){myEnd = 'L'}
+      if (myStart[myLoop] == 'N'){myEnd = 'M'}
+      if (myStart[myLoop] == 'O'){myEnd = 'N'}
+      if (myStart[myLoop] == 'P'){myEnd = 'O'}
+      if (myStart[myLoop] == 'Q'){myEnd = 'P'}
+      if (myStart[myLoop] == 'R'){myEnd = 'Q'}
+      if (myStart[myLoop] == 'S'){myEnd = 'R'}
+      if (myStart[myLoop] == 'T'){myEnd = 'S'}
+      if (myStart[myLoop] == 'U'){myEnd = 'T'}
+      if (myStart[myLoop] == 'V'){myEnd = 'U'}
+      if (myStart[myLoop] == 'W'){myEnd = 'V'}
+      if (myStart[myLoop] == 'X'){myEnd = 'w'}
+      if (myStart[myLoop] == 'Y'){myEnd = 'X'}
+      if (myStart[myLoop] == 'Z'){myEnd = 'Y'}
+      if (myStart[myLoop] == 'A'){myEnd = 'Z'}
+      if (myStart[myLoop] == '1'){myEnd = '0'}
+      if (myStart[myLoop] == '2'){myEnd = '1'}
+      if (myStart[myLoop] == '3'){myEnd = '2'}
+      if (myStart[myLoop] == '4'){myEnd = '3'}
+      if (myStart[myLoop] == '5'){myEnd = '4'}
+      if (myStart[myLoop] == '6'){myEnd = '5'}
+      if (myStart[myLoop] == '7'){myEnd = '6'}
+      if (myStart[myLoop] == '8'){myEnd = '7'}
+      if (myStart[myLoop] == '9'){myEnd = '8'}
+      if (myStart[myLoop] == '0'){myEnd = '9'}
+      if (myStart[myLoop] == ' '){myEnd = '-'}
+      if (myStart[myLoop] == '-'){myEnd = ' '}
+      if (myStart[myLoop] == 'A'){myEnd = 'b'}
+      
+      document.getElementById('myArea3').value += myEnd
+    } 
    
 }"><br>
 
 <textarea id="myArea3" rows=5 cols=70></textarea><br><br>
 
+doggo
+
+
+
+    <html>
+<body bgcolor="#ff72a1">
+    
